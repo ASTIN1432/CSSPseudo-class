@@ -1,0 +1,132 @@
+button {
+    background-color: #7b1b6d;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 180px;
+    height: 52px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #7b1b6d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('bg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #7b1b6d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.main {
+    background-color: #f98fe97e;
+    margin: 100px 100px 100px 100px ;
+    height: 800px;
+    text-align: center;
+}
+
+input {
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 51px;
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-weight: 900;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-30%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 80%;
+    transform: translate(-50%,-30%) scale(1);
+}
+
+.popup img {
+    width: 200px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px ;
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    background-color: #7b1b6d;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 300px;
+    height: 52px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
